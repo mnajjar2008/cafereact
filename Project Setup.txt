@@ -1,0 +1,36 @@
+
+npx create-react-app@3.4.1 nucampsite
+
+yarn add reactstrap@8.5.1
+
+yarn add react-popper@1.3.6
+
+
+yarn add bootstrap@4.5.2
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+yarn add font-awesome@4.7.0
+import 'font-awesome/css/font-awesome.css'
+
+yarn add bootstrap-social@5.1.1
+import 'bootstrap-social/bootstrap-social.css'
+
+yarn add react-router-dom@5.2.0
+
+yarn add redux@4.0.5
+yarn add react-redux@7.2.0
+
+
+yarn add react-redux-form@1.16.14
+
+yarn add redux-thunk@2.3.0
+yarn add redux-logger@3.0.6
+
+yarn global add json-server
+json-server -H 0.0.0.0 --watch db.json -p 3001 -d 2000
+
+yarn add react-transition-group@4.4.1
+
+yarn add react-animation-components@3.0.0
+yarn add prop-types@15.7.2
