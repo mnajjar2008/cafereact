@@ -28,7 +28,7 @@ body {
     border-radius: 0.5rem;
 }
 
-.nav-item .nav-link.active,
+ .active,
 .card-header,
 .card-footer button {
     background-color: black;
