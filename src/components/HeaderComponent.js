@@ -17,12 +17,12 @@ function Header(props) {
                 <nav>
                     <ul className="nav p-1 text-center flex-column flex-md-row">
                         <li className="nav-item">
-                            <a className="nav-link active" href="home.html">
+                            <a className="nav-link active" href="/home">
                                 <i className="fa fa-home" aria-hidden="true"></i> Home
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="menu.html">
+                            <a className="nav-link" href="/menu">
                                 <i className="fa fa-bars" aria-hidden="true"></i> Menu
                             </a>
                         </li>
@@ -42,7 +42,7 @@ function Header(props) {
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="about.html">
+                            <a className="nav-link" href="/about">
                                 <i className="fa fa-info-circle" aria-hidden="true"></i> About
                             </a>
                         </li>
