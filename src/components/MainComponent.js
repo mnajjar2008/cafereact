@@ -25,6 +25,7 @@ class Main extends Component {
                     <Route path="/home" component={Home} />
                     <Route path="/about" component={About} />
                     <Route path="/menu" render={() => <Menu items={this.state.items} />} />
+                    <Redirect to="/home" />
                 </Switch>
                 <Footer />
             </div>

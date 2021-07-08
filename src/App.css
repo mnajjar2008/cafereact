@@ -28,7 +28,7 @@ body {
     border-radius: 0.5rem;
 }
 
- .active,
+.nav-item .nav-link.active,
 .card-header,
 .card-footer button {
     background-color: black;
@@ -62,7 +62,7 @@ figure.card-body {
     margin-bottom: 0px;
 }
 
-.about-section-title {
+.section-title {
     background-color: rgba(214, 148, 86, 0.2);
 }
 

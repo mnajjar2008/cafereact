@@ -5,7 +5,7 @@ function About(props) {
         <div className="container">
             <section className="row mt-4">
                 <div className="col-12">
-                    <h4 className="about-section-title p-2">Our Cafe</h4>
+                    <h4 className="section-title p-2">Our Cafe</h4>
                     <p className="p-4">
                         San Jose Cafe's mission is to honor our guests' decision to dine with us by providing world-className service, great-tasting food to their order, in a clean comfortable environment. Since our humble beginnings over 6 years ago in
                         San Jose, California, we have been proud to serve our coffee, waffles, and pastries the way they're supposed to be — fresh, natural, and cooked to order.
@@ -14,7 +14,7 @@ function About(props) {
             </section>
             <section className="row mt-4">
                 <div className="col-12">
-                    <h4 className="about-section-title p-2">Location & Hours</h4>
+                    <h4 className="section-title p-2">Location & Hours</h4>
                 </div>
                 <div className="col-6 text-center p-4">
                     <hr />
@@ -44,7 +44,7 @@ function About(props) {
 
             <section className="row mt-4">
                 <div className="col-12">
-                    <h4 className="about-section-title p-2">Email US</h4>
+                    <h4 className="section-title p-2">Email US</h4>
                     <form className="pt-4">
                         <div className="form-group row">
                             <label htmlFor="Name" className="col-md-3 col-form-label">

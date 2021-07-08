@@ -16,13 +16,13 @@ function Footer(props) {
                     <div className="col-sm mb-3">
                         <h5>Connect</h5>
                         <a className="btn btn-dark" href="http://facebook.com/">
-                            <i className="fa fa-facebook"></i>
-                        </a>
+                            <i className="fa fa-facebook" />
+                        </a>{' '}
                         <a className="btn btn-dark" href="http://twitter.com/">
-                            <i className="fa fa-twitter"></i>
-                        </a>
+                            <i className="fa fa-twitter" />
+                        </a>{' '}
                         <a className="btn btn-dark" href="http://instagram.com/">
-                            <i className="fa fa-instagram"></i>
+                            <i className="fa fa-instagram" />
                         </a>
                     </div>
                     <div className="col-sm-12 col-lg text-sm-center">
