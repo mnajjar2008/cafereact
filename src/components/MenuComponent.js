@@ -15,7 +15,6 @@ function Rendercategoryitem(props) {
     return (
         <React.Fragment>
             <h4 className="text-center section-title p-3">{categoryname}</h4>
-            <hr className="hrstyle p-1" />
             <div className="p-sm-5">{specificcategorylist}</div>
         </React.Fragment>
     );
