@@ -29,7 +29,7 @@ class Main extends Component {
                     <Route path="/cart" component={Cart} />
                     <Route path="/home" component={Home} />
                     <Route path="/menu" render={() => <Menu items={this.state.items} />} />
-                    <Route path="/order" render={() => <Order items={this.state.items} />} />
+                    <Route exact path="/order" render={() => <Order items={this.state.items} />} />
                     <Route path="/about" component={About} />
                     <Route path="/:category" component={Ordercategory} />
                     <Redirect to="/home" />

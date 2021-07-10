@@ -5,7 +5,7 @@ function Rendercategoryitem(props) {
         return (
             <div key={item.id} className="d-flex justify-content-between">
                 <h5>{item.name}</h5>
-                <h5>${item.price}</h5>
+                <h5>${item.price.toFixed(2)}</h5>
             </div>
         );
     });

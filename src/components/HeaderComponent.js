@@ -32,7 +32,17 @@ function Header(props) {
                             <i className="fa fa-credit-card" aria-hidden="true" /> Order
                         </NavLink>
                     </NavItem>
-                    
+                    <NavItem>
+                        <NavLink
+                            className="nav-link"
+                            to={{
+                                pathname: 'https://www.google.com/maps/place/1141+Ringwood+Ct,+San+Jose,+CA+95131/@37.3944727,-121.8700569,14z/data=!4m5!3m4!1s0x808fcc03b0824993:0x1eadae59bcdf95d7!8m2!3d37.3927107!4d-121.8941903?hl=en&authuser=0',
+                            }}
+                            target="_blank"
+                        >
+                            <i className="fa fa-map-marker" aria-hidden="true" /> Locate
+                        </NavLink>
+                    </NavItem>
                     <NavItem>
                         <NavLink className="nav-link" to="/about">
                             <i className="fa fa-info-circle" aria-hidden="true" /> About

@@ -9,7 +9,7 @@ function Rendercard(props) {
                 <div key={item.id} className="card">
                     <div className="card-header justify-content-between d-flex">
                         <h6>{item.name}</h6>
-                        <h6>${item.price}</h6>
+                        <h6>${item.price.toFixed(2)}</h6>
                     </div>
                     <figure className="card-body">
                         <img src={item.image} alt={item.name} />
