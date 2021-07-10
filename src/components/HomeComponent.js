@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Home(props) {
+function Home() {
     return (
         <div className="container">
             <div className="row mt-5 justify-content-between">
@@ -16,7 +16,7 @@ function Home(props) {
                     <p className="p-3">Although we offer a wide variety of hot and iced drinks, we also provide savory and sweet food options. So whether you're stopping for your morning coffee, lunch, or an afternoon snack, we've got you covered!</p>
                 </div>
                 <div className="col-md-6">
-                    <img className="img-thumbnail" src="assets/menu items/waffles/waffle.jpeg" alt="Coffee Collection" />
+                    <img className="img-thumbnail" src="assets/menu-items/waffles/waffle.jpeg" alt="Coffee Collection" />
                     <p className="p-3">We pride ourselves on providing organic, fair trade tea and coffee. We work with local dairy suppliers and bakeries to source the freshest, highest quality offerings.</p>
                     <p className="p-3">Our classic menu will be sure to please guests of all ages. We offer special quarterly waffles and pastries to please many of our guest who always look forward to visit our cafe and enjoy a great meal.</p>
                 </div>

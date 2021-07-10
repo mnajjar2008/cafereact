@@ -19,21 +19,20 @@ class Main extends Component {
     }
 
     render() {
-        const Ordercategory = props => {
-            return <Order items={this.state.items.filter(item => item.category === props.match.params.category)} />;
-        };
         return (
             <div>
                 <Header />
-                <Switch>
-                    <Route path="/cart" component={Cart} />
-                    <Route path="/home" component={Home} />
-                    <Route path="/menu" render={() => <Menu items={this.state.items} />} />
-                    <Route exact path="/order" render={() => <Order items={this.state.items} />} />
-                    <Route path="/about" component={About} />
-                    <Route path="/:category" component={Ordercategory} />
-                    <Redirect to="/home" />
-                </Switch>
+                <main>
+                    <Switch>
+                        <Route path="/cart" component={Cart} />
+                        <Route path="/home" component={Home} />
+                        <Route path="/menu" render={() => <Menu items={this.state.items} />} />
+                        <Route exact path="/order" render={() => <Order items={this.state.items} />} />
+                        <Route path="/order/:category" render={props => <Order items={this.state.items} paramsVal={props.match.params.category} />} />
+                        <Route path="/about" component={About} />
+                        <Redirect to="/home" />
+                    </Switch>
+                </main>
                 <Footer />
             </div>
         );
