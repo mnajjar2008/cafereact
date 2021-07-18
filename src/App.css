@@ -3,7 +3,7 @@ body {
 }
 
 .bg-image-header {
-    background-image: url('./shared/Cafe-Header11.jpg');
+    background-image: url('./assets/Cafe-Header11.jpg');
     background-attachment: fixed;
     padding: 70px;
 }

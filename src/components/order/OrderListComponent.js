@@ -1,20 +1,20 @@
 const OrderList = props => {
-    const list = props.items.map(item => {
+    const list = props.products.map(product => {
         return (
-            <article key={item.id} className="col-9 col-sm-8 col-md-6 col-lg-4 mx-auto">
+            <article key={product.id} className="col-9 col-sm-8 col-md-6 col-lg-4 mx-auto">
                 <div className="card">
                     <div className="card-header justify-content-between d-flex">
-                        <h6>{item.name}</h6>
-                        <h6>${item.price.toFixed(2)}</h6>
+                        <h6>{product.name}</h6>
+                        <h6>${product.price.toFixed(2)}</h6>
                     </div>
                     <figure className="card-body">
-                        <img src={item.image} alt={item.name} />
+                        <img src={product.image} alt={product.name} />
                     </figure>
                     <figcaption className="card-footer">
-                        {item.description}
+                        {product.description}
                         <form className="text-right">
-                            <label htmlFor={item.name}>QTY</label>
-                            <input size="2" type="text" pattern="[1-9]" title="Add items less than 9" id={item.name} name={item.name} value="1" />
+                            <label htmlFor={product.name}>QTY</label>
+                            <input size="2" type="text" pattern="[1-9]" title="Add products less than 9" id={product.name} name={product.name} value="1" />
                             <button type="submit" className="form-control">
                                 Add
                             </button>

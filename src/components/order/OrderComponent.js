@@ -5,7 +5,7 @@ import OrderList from './OrderListComponent';
 
 const Order = props => {
     const paramsVal = props.paramsVal;
-    const categoryItems = props.items.filter(item => item.category === paramsVal);
+    const categoryProducts = props.products.filter(product => product.category === paramsVal);
 
     return (
         <div className="container">
@@ -37,9 +37,9 @@ const Order = props => {
                     </NavLink>
                 </NavItem>
             </Nav>
-            {!!categoryItems.length && <OrderList items={categoryItems} />}
-            {!categoryItems.length && <OrderList items={props.items} />}
-            {!categoryItems.length && !!paramsVal && <Redirect to="/home" />}
+            {!!categoryProducts.length && <OrderList products={categoryProducts} />}
+            {!categoryProducts.length && <OrderList products={props.products} />}
+            {!categoryProducts.length && !!paramsVal && <Redirect to="/home" />}
         </div>
     );
 };
