@@ -1,6 +1,6 @@
 import React from 'react';
 
-function About(props) {
+function About() {
     return (
         <div className="container">
             <section className="row mt-4">

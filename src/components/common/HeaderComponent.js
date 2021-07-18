@@ -2,7 +2,7 @@ import React from 'react';
 import { Nav, NavItem } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 
-function Header(props) {
+function Header() {
     return (
         <React.Fragment>
             <header className="bg-image-header">
