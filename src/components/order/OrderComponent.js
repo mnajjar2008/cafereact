@@ -37,8 +37,8 @@ const Order = props => {
                     </NavLink>
                 </NavItem>
             </Nav>
-            {!!categoryProducts.length && <OrderList products={categoryProducts} />}
-            {!categoryProducts.length && <OrderList products={props.products} />}
+            {!!categoryProducts.length && <OrderList onAdd={props.onAdd} products={categoryProducts} />}
+            {!categoryProducts.length && <OrderList onAdd={props.onAdd} products={props.products} />}
             {!categoryProducts.length && !!paramsVal && <Redirect to="/home" />}
         </div>
     );
