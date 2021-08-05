@@ -12,7 +12,7 @@ export const PRODUCTS = [
 
         category: 'pastries',
 
-        quantity: 1,
+        quantity: 0,
     },
 
     {
@@ -28,7 +28,7 @@ export const PRODUCTS = [
 
         category: 'pastries',
 
-        quantity: 1,
+        quantity: 0,
     },
     {
         id: 2,
@@ -43,7 +43,7 @@ export const PRODUCTS = [
 
         category: 'pastries',
 
-        quantity: 1,
+        quantity: 0,
     },
 
     {
@@ -59,7 +59,7 @@ export const PRODUCTS = [
 
         category: 'pastries',
 
-        quantity: 1,
+        quantity: 0,
     },
 
     {
@@ -75,7 +75,7 @@ export const PRODUCTS = [
 
         category: 'pastries',
 
-        quantity: 1,
+        quantity: 0,
     },
 
     {
@@ -91,7 +91,7 @@ export const PRODUCTS = [
 
         category: 'pastries',
 
-        quantity: 1,
+        quantity: 0,
     },
 
     {
@@ -107,7 +107,7 @@ export const PRODUCTS = [
 
         category: 'waffles',
 
-        quantity: 1,
+        quantity: 0,
     },
 
     {
@@ -123,7 +123,7 @@ export const PRODUCTS = [
 
         category: 'waffles',
 
-        quantity: 1,
+        quantity: 0,
     },
 
     {
@@ -139,7 +139,7 @@ export const PRODUCTS = [
 
         category: 'waffles',
 
-        quantity: 1,
+        quantity: 0,
     },
 
     {
@@ -155,7 +155,7 @@ export const PRODUCTS = [
 
         category: 'waffles',
 
-        quantity: 1,
+        quantity: 0,
     },
 
     {
@@ -171,7 +171,7 @@ export const PRODUCTS = [
 
         category: 'breakfast',
 
-        quantity: 1,
+        quantity: 0,
     },
 
     {
@@ -187,7 +187,7 @@ export const PRODUCTS = [
 
         category: 'breakfast',
 
-        quantity: 1,
+        quantity: 0,
     },
 
     {
@@ -203,7 +203,7 @@ export const PRODUCTS = [
 
         category: 'breakfast',
 
-        quantity: 1,
+        quantity: 0,
     },
 
     {
@@ -219,7 +219,7 @@ export const PRODUCTS = [
 
         category: 'breakfast',
 
-        quantity: 1,
+        quantity: 0,
     },
 
     {
@@ -235,7 +235,7 @@ export const PRODUCTS = [
 
         category: 'breakfast',
 
-        quantity: 1,
+        quantity: 0,
     },
 
     {
@@ -251,7 +251,7 @@ export const PRODUCTS = [
 
         category: 'breakfast',
 
-        quantity: 1,
+        quantity: 0,
     },
 
     {
@@ -267,7 +267,7 @@ export const PRODUCTS = [
 
         category: 'breakfast',
 
-        quantity: 1,
+        quantity: 0,
     },
 
     {
@@ -283,7 +283,7 @@ export const PRODUCTS = [
 
         category: 'breakfast',
 
-        quantity: 1,
+        quantity: 0,
     },
 
     {
@@ -299,7 +299,7 @@ export const PRODUCTS = [
 
         category: 'lunch',
 
-        quantity: 1,
+        quantity: 0,
     },
 
     {
@@ -315,7 +315,7 @@ export const PRODUCTS = [
 
         category: 'lunch',
 
-        quantity: 1,
+        quantity: 0,
     },
 
     {
@@ -331,7 +331,7 @@ export const PRODUCTS = [
 
         category: 'lunch',
 
-        quantity: 1,
+        quantity: 0,
     },
 
     {
@@ -347,7 +347,7 @@ export const PRODUCTS = [
 
         category: 'lunch',
 
-        quantity: 1,
+        quantity: 0,
     },
 
     {
@@ -363,7 +363,7 @@ export const PRODUCTS = [
 
         category: 'lunch',
 
-        quantity: 1,
+        quantity: 0,
     },
 
     {
@@ -379,7 +379,7 @@ export const PRODUCTS = [
 
         category: 'lunch',
 
-        quantity: 1,
+        quantity: 0,
     },
 
     {
@@ -395,7 +395,7 @@ export const PRODUCTS = [
 
         category: 'drinks',
 
-        quantity: 1,
+        quantity: 0,
     },
 
     {
@@ -411,7 +411,7 @@ export const PRODUCTS = [
 
         category: 'drinks',
 
-        quantity: 1,
+        quantity: 0,
     },
 
     {
@@ -427,7 +427,7 @@ export const PRODUCTS = [
 
         category: 'drinks',
 
-        quantity: 1,
+        quantity: 0,
     },
 
     {
@@ -443,7 +443,7 @@ export const PRODUCTS = [
 
         category: 'drinks',
 
-        quantity: 1,
+        quantity: 0,
     },
 
     {
@@ -459,7 +459,7 @@ export const PRODUCTS = [
 
         category: 'drinks',
 
-        quantity: 1,
+        quantity: 0,
     },
 
     {
@@ -475,7 +475,7 @@ export const PRODUCTS = [
 
         category: 'drinks',
 
-        quantity: 1,
+        quantity: 0,
     },
 
     {
@@ -491,7 +491,7 @@ export const PRODUCTS = [
 
         category: 'drinks',
 
-        quantity: 1,
+        quantity: 0,
     },
 
     {
@@ -508,7 +508,7 @@ export const PRODUCTS = [
 
         category: 'drinks',
 
-        quantity: 1,
+        quantity: 0,
     },
 
     {
@@ -524,7 +524,7 @@ export const PRODUCTS = [
 
         category: 'drinks',
 
-        quantity: 1,
+        quantity: 0,
     },
 
     {
@@ -540,7 +540,7 @@ export const PRODUCTS = [
 
         category: 'drinks',
 
-        quantity: 1,
+        quantity: 0,
     },
 
     {
@@ -557,7 +557,7 @@ export const PRODUCTS = [
 
         category: 'drinks',
 
-        quantity: 1,
+        quantity: 0,
     },
     {
         id: 35,
@@ -572,6 +572,6 @@ export const PRODUCTS = [
 
         category: 'drinks',
 
-        quantity: 1,
+        quantity: 0,
     },
 ];
