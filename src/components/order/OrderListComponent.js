@@ -1,4 +1,21 @@
+import { useState } from 'react';
+
 const OrderList = props => {
+    const [state, setState] = useState(props.products);
+
+    const handlechange = e => {
+        setState(
+            [...state].map(item => {
+                if (item.name === e.target.name) {
+                    return { ...item, quantity: e.target.value };
+                } else return item;
+            }),
+        );
+    };
+
+  
+    const onAdd = id => {};
+
     const list = props.products.map(product => {
         return (
             <article key={product.id} className="col-9 col-sm-8 col-md-6 col-lg-4 mx-auto">
@@ -12,10 +29,10 @@ const OrderList = props => {
                     </figure>
                     <figcaption className="card-footer">
                         {product.description}
-                        <form className="text-right">
+                        <form onSubmit={e => e.preventDefault()} className="text-right">
                             <label htmlFor={product.name}>QTY</label>
-                            <input size="2" type="text" pattern="[1-9]" title="Add products less than 9" id={product.name} name={product.name} value="1" />
-                            <button type="submit" className="form-control">
+                            <input size="2" type="text" pattern="[1-9]" title="Add products less than 9" id={product.name} name={product.name} value={state.filter(a => a.id === product.id)[0].quantity} onChange={handlechange} />
+                            <button type="submit" className="form-control" onClick={() => onAdd(product.id)}>
                                 Add
                             </button>
                         </form>

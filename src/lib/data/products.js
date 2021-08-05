@@ -11,6 +11,8 @@ export const PRODUCTS = [
         description: 'House-made Blueberry, Banana Chocolate Chip or Oat-Bran muffins. Nut free!',
 
         category: 'pastries',
+
+        quantity: 1,
     },
 
     {
@@ -25,6 +27,8 @@ export const PRODUCTS = [
         description: 'Choose between our house-made Cranberry-Orange Scone or our Fair Scone with organic raspberry jam.',
 
         category: 'pastries',
+
+        quantity: 1,
     },
     {
         id: 2,
@@ -38,6 +42,8 @@ export const PRODUCTS = [
         description: 'Made in house every morning. Choose between chocolate chip and oatmeal raisin.',
 
         category: 'pastries',
+
+        quantity: 1,
     },
 
     {
@@ -52,6 +58,8 @@ export const PRODUCTS = [
         description: "This house-made brownie is more fudgey than cakey and it's awesome.",
 
         category: 'pastries',
+
+        quantity: 1,
     },
 
     {
@@ -66,6 +74,8 @@ export const PRODUCTS = [
         description: 'Packaged in a gluten free facility.',
 
         category: 'pastries',
+
+        quantity: 1,
     },
 
     {
@@ -80,6 +90,8 @@ export const PRODUCTS = [
         description: 'Gluten free and vegan, packaged in a gluten free facility.',
 
         category: 'pastries',
+
+        quantity: 1,
     },
 
     {
@@ -94,6 +106,8 @@ export const PRODUCTS = [
         description: 'Made with hemp milk, vegetable oil and Bob’s Red Mill gf waffle mix and cooked on a designated vegan waffle iron',
 
         category: 'waffles',
+
+        quantity: 1,
     },
 
     {
@@ -108,6 +122,8 @@ export const PRODUCTS = [
         description: 'Fluffy and a little sweet, made with our very own buttermilk waffle recipe',
 
         category: 'waffles',
+
+        quantity: 1,
     },
 
     {
@@ -122,6 +138,8 @@ export const PRODUCTS = [
         description: 'Fluffy AND crispy, we cook the bacon and cheese right into the waffle—we recommend eating it with maple syrup for a perfect sweet and savory breakfast',
 
         category: 'waffles',
+
+        quantity: 1,
     },
 
     {
@@ -136,6 +154,8 @@ export const PRODUCTS = [
         description: 'This savory waffle packs a punch with bold flavors—also, our pesto is nut-free!',
 
         category: 'waffles',
+
+        quantity: 1,
     },
 
     {
@@ -150,6 +170,8 @@ export const PRODUCTS = [
         description: 'Bacon, cheddar cheese and scrambled egg on whole wheat, sourdough, or gluten free bread.',
 
         category: 'breakfast',
+
+        quantity: 1,
     },
 
     {
@@ -164,6 +186,8 @@ export const PRODUCTS = [
         description: 'Turkey sausage, pepper jack cheese and scrambled egg on whole wheat, sourdough, or gluten free bread.',
 
         category: 'breakfast',
+
+        quantity: 1,
     },
 
     {
@@ -178,6 +202,8 @@ export const PRODUCTS = [
         description: 'Spinach, tomato, scrambled egg, and pepper jack cheese.',
 
         category: 'breakfast',
+
+        quantity: 1,
     },
 
     {
@@ -192,6 +218,8 @@ export const PRODUCTS = [
         description: 'Cheddar cheese and scrambled egg on whole wheat, sourdough, or gluten free bread.',
 
         category: 'breakfast',
+
+        quantity: 1,
     },
 
     {
@@ -206,6 +234,8 @@ export const PRODUCTS = [
         description: 'Avocado and feta cheese on toast with a spritz of lemon and salt and pepper—dress it up by adding bacon or make it vegan by taking away the cheese.',
 
         category: 'breakfast',
+
+        quantity: 1,
     },
 
     {
@@ -220,6 +250,8 @@ export const PRODUCTS = [
         description: 'This is a breadless option! Two turkey sausages cut in half horizontally and cooked on the grill with cheddar cheese, tomato, and spinach between the halves.',
 
         category: 'breakfast',
+
+        quantity: 1,
     },
 
     {
@@ -234,6 +266,8 @@ export const PRODUCTS = [
         description: 'Single hash brown patty cooked on our gluten free panini grill.',
 
         category: 'breakfast',
+
+        quantity: 1,
     },
 
     {
@@ -248,6 +282,8 @@ export const PRODUCTS = [
         description: 'Available sides to pick',
 
         category: 'breakfast',
+
+        quantity: 1,
     },
 
     {
@@ -262,6 +298,8 @@ export const PRODUCTS = [
         description: 'Grilled sandwich with chicken breast, mashed avocado, spinach and pepper jack cheese on your choice of sourdough, whole wheat or gluten free sandwich bread. Served with potato chips.',
 
         category: 'lunch',
+
+        quantity: 1,
     },
 
     {
@@ -276,6 +314,8 @@ export const PRODUCTS = [
         description: 'Grilled tomato, spinach, mozzarella cheese and pesto on your choice of whole wheat, sourdough, or gluten free sandwich bread. Served with a side of potato chips..',
 
         category: 'lunch',
+
+        quantity: 1,
     },
 
     {
@@ -290,6 +330,8 @@ export const PRODUCTS = [
         description: 'Thin slices of ham and cheddar cheese grilled with butter on your choice of whole wheat, sourdough or gluten free sandwich bread. Served with potato chips.',
 
         category: 'lunch',
+
+        quantity: 1,
     },
 
     {
@@ -304,6 +346,8 @@ export const PRODUCTS = [
         description: 'Two slices of cheddar cheese, melted to perfection between two slices of whole wheat, sourdough, or gluten free sandwich bread. Served with a side of potato chips.',
 
         category: 'lunch',
+
+        quantity: 1,
     },
 
     {
@@ -318,6 +362,8 @@ export const PRODUCTS = [
         description: 'Sweet and creamy and great with grilled cheese.',
 
         category: 'lunch',
+
+        quantity: 1,
     },
 
     {
@@ -332,6 +378,8 @@ export const PRODUCTS = [
         description: 'All beef hot dog cooked in a thin layer of cornbread waffle batter. Awesome with ketchup and mustard—equally awesome with syrup.',
 
         category: 'lunch',
+
+        quantity: 1,
     },
 
     {
@@ -346,6 +394,8 @@ export const PRODUCTS = [
         description: 'Brewed using our Daybreak roast, a medium-dark coffee with notes of creamy chocolate malt and buttery toast.',
 
         category: 'drinks',
+
+        quantity: 1,
     },
 
     {
@@ -360,6 +410,8 @@ export const PRODUCTS = [
         description: 'Americano.',
 
         category: 'drinks',
+
+        quantity: 1,
     },
 
     {
@@ -374,6 +426,8 @@ export const PRODUCTS = [
         description: 'Two espresso shots in hot water.',
 
         category: 'drinks',
+
+        quantity: 1,
     },
 
     {
@@ -388,6 +442,8 @@ export const PRODUCTS = [
         description: 'Espresso and velvety foamy milk. Think of a caffeinated cloud.',
 
         category: 'drinks',
+
+        quantity: 1,
     },
 
     {
@@ -402,6 +458,8 @@ export const PRODUCTS = [
         description: 'Latte.',
 
         category: 'drinks',
+
+        quantity: 1,
     },
 
     {
@@ -416,6 +474,8 @@ export const PRODUCTS = [
         description: 'Semi-sweet chocolate sauce, espresso, and velvety steamed milk, topped with whip cream.',
 
         category: 'drinks',
+
+        quantity: 1,
     },
 
     {
@@ -430,6 +490,8 @@ export const PRODUCTS = [
         description: 'White chocolate powder melted into espresso and velvety steamed milk, topped with whipped cream.',
 
         category: 'drinks',
+
+        quantity: 1,
     },
 
     {
@@ -445,6 +507,8 @@ export const PRODUCTS = [
             'Not available in decaf. We use the Japanese Iced Coffee method of brewing directly over ice for quick cooling—except the ice is actually coffee ice cubes to minimize watering the coffee down. Smooth and mild, but definitely not weak. Dress it up with simple syrup and milk or drink it black.',
 
         category: 'drinks',
+
+        quantity: 1,
     },
 
     {
@@ -459,6 +523,8 @@ export const PRODUCTS = [
         description: 'Iced tea.',
 
         category: 'drinks',
+
+        quantity: 1,
     },
 
     {
@@ -473,6 +539,8 @@ export const PRODUCTS = [
         description: 'Organic lemonade—sweet with a little tang.',
 
         category: 'drinks',
+
+        quantity: 1,
     },
 
     {
@@ -488,6 +556,8 @@ export const PRODUCTS = [
             'We use loose-leaf Sattwa chai and organic sugar to make a chai concentrate in house. A chai latte is half chai concentrate and half steamed milk (unless you like it iced!). Not too sweet, not too spicy, this chai is mild and comforting and oh-so-tasty.',
 
         category: 'drinks',
+
+        quantity: 1,
     },
     {
         id: 35,
@@ -501,5 +571,7 @@ export const PRODUCTS = [
         description: 'Chocolate and vanilla with steamed milk and topped with whip cream.',
 
         category: 'drinks',
+
+        quantity: 1,
     },
 ];
