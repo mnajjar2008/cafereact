@@ -40,11 +40,11 @@ const OrderList = props => {
         { name: 'Hot Cocoa', quantity: 1 },
     ]);
 
-    const handlechange = e => {
+    const handleChange = e => {
         setState(
             [...state].map(item => {
                 if (item.name === e.target.name) {
-                    return { ...item, quantity: e.target.value };
+                    return { ...item, quantity: +e.target.value };
                 } else return item;
             }),
         );
@@ -69,7 +69,7 @@ const OrderList = props => {
                         {product.description}
                         <form onSubmit={e => handleSubmit(e, product.id, state.filter(item => item.name === product.name)[0].quantity)} className="text-right">
                             <label htmlFor={product.name}>QTY</label>
-                            <input size="2" type="text" pattern="[1-9]" title="Add products less than 9" id={product.name} name={product.name} value={state.filter(item => item.name === product.name)[0].quantity} onChange={handlechange} />
+                            <input size="2" type="text" pattern="[1-9]" title="Add products less than 9" id={product.name} name={product.name} value={state.filter(item => item.name === product.name)[0].quantity} onChange={handleChange} />
                             <button type="submit" className="form-control">
                                 Add
                             </button>

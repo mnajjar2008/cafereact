@@ -16,7 +16,7 @@ function Main() {
         setProducts(
             [...products].map(item => {
                 if (item.id === id) {
-                    return { ...item, quantity: Number(products.filter(item => item.id === id)[0].quantity) + Number(quantity) };
+                    return { ...item, quantity: products.filter(item => item.id === id)[0].quantity + quantity };
                 } else return item;
             }),
         );
