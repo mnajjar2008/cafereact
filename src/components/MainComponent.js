@@ -22,8 +22,10 @@ function Main() {
         );
     };
 
+    const cartItemsQuantity = products.reduce((total, item) => item.quantity + total, 0);
+
     const RenderCart = () => {
-        const items = products.filter(a => a.quantity > 0);
+        const items = products.filter(item => item.quantity > 0);
         if (items.length) {
             return <Cart items={items} />;
         } else return <Cart />;
@@ -31,7 +33,7 @@ function Main() {
 
     return (
         <div>
-            <Header />
+            <Header badge={cartItemsQuantity} />
             <main>
                 <Switch>
                     <Route path="/cart" component={RenderCart} />

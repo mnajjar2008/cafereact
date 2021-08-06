@@ -1,8 +1,9 @@
 import React from 'react';
 import { Nav, NavItem } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
+import { Badge } from 'reactstrap';
 
-function Header() {
+function Header(props) {
     return (
         <React.Fragment>
             <header className="bg-image-header">
@@ -50,7 +51,7 @@ function Header() {
                     </NavItem>
                     <NavItem>
                         <NavLink className="nav-link" to="/cart">
-                            <i className="fa fa-shopping-cart" aria-hidden="true" /> Cart
+                            <i className="fa fa-shopping-cart" aria-hidden="true" /> Cart {props.badge > 0 && <Badge className="bg-warning text-dark">{props.badge}</Badge>}
                         </NavLink>
                     </NavItem>
                 </Nav>
