@@ -8,7 +8,7 @@ function Home() {
                 <div className="col-md-6">
                     <h2 className="pl-3">Welcome to San Jose Cafe</h2>
                     <p className="p-3">
-                        We number one serving cafe in the bay area. our coffee is the best in town. our priority is customers satisfaction. We use the best fresh ingredients to serve our customers. We work hard to focus and improve service that we
+                        We are number one serving cafe in the bay area. our coffee is the best in town. our priority is customers satisfaction. We use the best fresh ingredients to serve our customers. We work hard to focus and improve service that we
                         provide to make sure our customers are happy.
                     </p>
 

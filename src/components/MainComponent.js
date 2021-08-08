@@ -27,7 +27,7 @@ function Main() {
     const RenderCart = () => {
         const items = products.filter(item => item.quantity > 0);
         if (items.length) {
-            return <Cart items={items} />;
+            return <Cart items={items} onAdd={(id, quantity) => onAdd(id, quantity)} />;
         } else return <Cart />;
     };
 

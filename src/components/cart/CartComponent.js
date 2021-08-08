@@ -11,13 +11,19 @@ function Cart(props) {
                     </div>
                     <div className="col-md-3 text-center text-md-left p-sm-2">{item.name}</div>
                     <div className="col-md-3 text-center">
-                        <button className="btn-custom ">-</button>
+                        <button type="text" onClick={() => props.onAdd(item.id, -1)} className="btn-custom ">
+                            -
+                        </button>
                         <span>{item.quantity}</span>
-                        <button className="btn-custom ">+</button>
+                        <button type="text" onClick={() => props.onAdd(item.id, 1)} className="btn-custom ">
+                            +
+                        </button>
                     </div>
                     <div className="col-md-2 text-center p-sm-2">${item.price.toFixed(2)}</div>
                     <div className="col-md-2 text-right d-none d-md-block">
-                        <button className="btn btn-dark btn-sm">Remove</button>
+                        <button type="text" onClick={() => props.onAdd(item.id, -item.quantity)} className="btn btn-dark btn-sm">
+                            Remove
+                        </button>
                     </div>
                 </div>
             );
@@ -31,7 +37,7 @@ function Cart(props) {
                     <h6 className="col-md-2 text-center">PRICE</h6>
                 </div>
                 {list}
-                <div className="d-flex bg-dark text-white justify-content-between mb-2 p-2">
+                <div className="d-flex custom-row justify-content-between mb-2 p-2">
                     <h6>Total</h6>
                     <h6>${total}</h6>
                 </div>
