@@ -51,7 +51,7 @@ function Header(props) {
                     </NavItem>
                     <NavItem>
                         <NavLink className="nav-link" to="/cart">
-                            <i className="fa fa-shopping-cart" aria-hidden="true" /> Cart {props.badge > 0 && <Badge >{props.badge}</Badge>}
+                            <i className="fa fa-shopping-cart" aria-hidden="true" /> Cart {!!props.badge && <Badge>{props.badge}</Badge>}
                         </NavLink>
                     </NavItem>
                 </Nav>

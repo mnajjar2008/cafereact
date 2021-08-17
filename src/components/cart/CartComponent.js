@@ -1,11 +1,11 @@
 import React from 'react';
 
 function Cart(props) {
-    if (props.items) {
+    if (props.items.length) {
         const total = props.items.reduce((total, item) => item.price * item.quantity + total, 0).toFixed(2);
         const list = props.items.map(item => {
             return (
-                <div className="row align-items-center bg-light m-2 p-sm-2">
+                <div key={item.id} className="row align-items-center bg-light m-2 p-sm-2">
                     <div className="text-center text-md-left col-md-2">
                         <img width="100" height="100" src={item.image} alt={item.name} />
                     </div>
@@ -46,6 +46,7 @@ function Cart(props) {
                 </div>
             </div>
         );
-    } else return <div />;
+    }
+    return !!props.items.length && <div />;
 }
 export default Cart;

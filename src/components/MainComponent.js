@@ -22,21 +22,12 @@ function Main() {
         );
     };
 
-    const cartItemsQuantity = products.reduce((total, item) => item.quantity + total, 0);
-
-    const RenderCart = () => {
-        const items = products.filter(item => item.quantity > 0);
-        if (items.length) {
-            return <Cart items={items} onAdd={(id, quantity) => onAdd(id, quantity)} />;
-        } else return <Cart />;
-    };
-
     return (
         <div>
-            <Header badge={cartItemsQuantity} />
+            <Header badge={products.reduce((total, item) => item.quantity + total, 0)} />
             <main>
                 <Switch>
-                    <Route path="/cart" component={RenderCart} />
+                    <Route path="/cart" render={() => <Cart items={products.filter(item => item.quantity > 0)} onAdd={(id, quantity) => onAdd(id, quantity)} />} />
                     <Route path="/home" component={Home} />
                     <Route path="/menu" render={() => <Menu products={products} />} />
                     <Route exact path="/order" render={() => <Order onAdd={(id, quantity) => onAdd(id, quantity)} products={products} />} />
