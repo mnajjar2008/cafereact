@@ -30,13 +30,13 @@ function Footer() {
                             <li>
                                 <a role="button" className="btn btn-sm" href="tel:206-555-1234">
                                     {' '}
-                                    <i className="fa fa-phone-square" i />{' '}
+                                    <i className="fa fa-phone-square" />{' '}
                                 </a>
                                 Call: 206-555-1234
                             </li>
                             <li>
                                 <a role="button" className="btn btn-sm" href="email:sanjosecafe@gmail.com">
-                                    <i className="fa fa-envelope" i />
+                                    <i className="fa fa-envelope" />
                                 </a>{' '}
                                 Email: sanjosecafe@gmail.com
                             </li>
