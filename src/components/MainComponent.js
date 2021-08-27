@@ -13,13 +13,12 @@ function Main() {
     const [products, setProducts] = useState(PRODUCTS);
 
     const onAdd = (id, quantity) => {
-        setProducts(
-            [...products].map(item => {
-                if (item.id === id) {
-                    return { ...item, quantity: products.filter(item => item.id === id)[0].quantity + quantity };
-                } else return item;
-            }),
-        );
+        const newProducts = products.map(item => {
+            if (item.id === id) {
+                return { ...item, quantity: products.filter(item => item.id === id)[0].quantity + quantity };
+            } else return item;
+        });
+        setProducts(newProducts);
     };
 
     return (
@@ -31,7 +30,7 @@ function Main() {
                     <Route path="/home" component={Home} />
                     <Route path="/menu" render={() => <Menu products={products} />} />
                     <Route exact path="/order" render={() => <Order onAdd={(id, quantity) => onAdd(id, quantity)} />} />
-                    <Route path="/order/:category" render={props => <Order onAdd={(id, quantity) => onAdd(id, quantity)} paramsVal={props.match.params.category} />} />
+                    <Route path="/order/:category" render={props => <Order onAdd={(id, quantity) => onAdd(id, quantity)} category={props.match.params.category} />} />
                     <Route path="/about" component={About} />
                     <Redirect to="/home" />
                 </Switch>
