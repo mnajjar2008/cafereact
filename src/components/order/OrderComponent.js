@@ -3,71 +3,74 @@ import { fetchProducts } from '../../lib/data/mockData';
 import Loading from '../common/LoadingComponent';
 import OrderNav from './OrderNavComponent';
 
-const Order = props => {
+const INIT_DATA = [
+    { name: 'Muffin', quantity: 1 },
+    { name: 'Scone', quantity: 1 },
+    { name: 'Cookie', quantity: 1 },
+    { name: 'Brownie', quantity: 1 },
+    { name: 'GF Cookie', quantity: 1 },
+    { name: 'Protein Puck', quantity: 1 },
+    { name: 'Vegan + Gluten Free Waffle', quantity: 1 },
+    { name: 'Waffle', quantity: 1 },
+    { name: 'Bacon Cheddar Waffle', quantity: 1 },
+    { name: 'Pesto + Feta Waffle', quantity: 1 },
+    { name: 'Bacon + Cheddar Sandwich', quantity: 1 },
+    { name: 'Turkey Sausage + Pepper Jack', quantity: 1 },
+    { name: 'Veggie + Pepper Jack', quantity: 1 },
+    { name: 'Egg & Cheddar', quantity: 1 },
+    { name: 'Aussie Toast', quantity: 1 },
+    { name: 'Stacks', quantity: 1 },
+    { name: 'Hashbrown', quantity: 1 },
+    { name: 'Sides', quantity: 1 },
+    { name: 'Chicken Avocado', quantity: 1 },
+    { name: 'Tomato Mozzarella', quantity: 1 },
+    { name: 'Ham + Cheese', quantity: 1 },
+    { name: 'Grilled Cheese', quantity: 1 },
+    { name: 'Tomato Soup', quantity: 1 },
+    { name: 'Waffle Dog', quantity: 1 },
+    { name: 'Drip', quantity: 1 },
+    { name: 'Americano', quantity: 1 },
+    { name: 'Double Espresso', quantity: 1 },
+    { name: 'Cappuccino', quantity: 1 },
+    { name: 'Latte', quantity: 1 },
+    { name: 'Mocha', quantity: 1 },
+    { name: 'White Mocha', quantity: 1 },
+    { name: 'Iced Coffee', quantity: 1 },
+    { name: 'Iced Tea', quantity: 1 },
+    { name: 'Lemonade', quantity: 1 },
+    { name: 'Chai Latte', quantity: 1 },
+    { name: 'Hot Cocoa', quantity: 1 },
+];
+
+const Order = ({ category, onAdd }) => {
     const [products, setProducts] = useState([]);
-    const [state, setState] = useState([
-        { name: 'Muffin', quantity: 1 },
-        { name: 'Scone', quantity: 1 },
-        { name: 'Cookie', quantity: 1 },
-        { name: 'Brownie', quantity: 1 },
-        { name: 'GF Cookie', quantity: 1 },
-        { name: 'Protein Puck', quantity: 1 },
-        { name: 'Vegan + Gluten Free Waffle', quantity: 1 },
-        { name: 'Waffle', quantity: 1 },
-        { name: 'Bacon Cheddar Waffle', quantity: 1 },
-        { name: 'Pesto + Feta Waffle', quantity: 1 },
-        { name: 'Bacon + Cheddar Sandwich', quantity: 1 },
-        { name: 'Turkey Sausage + Pepper Jack', quantity: 1 },
-        { name: 'Veggie + Pepper Jack', quantity: 1 },
-        { name: 'Egg & Cheddar', quantity: 1 },
-        { name: 'Aussie Toast', quantity: 1 },
-        { name: 'Stacks', quantity: 1 },
-        { name: 'Hashbrown', quantity: 1 },
-        { name: 'Sides', quantity: 1 },
-        { name: 'Chicken Avocado', quantity: 1 },
-        { name: 'Tomato Mozzarella', quantity: 1 },
-        { name: 'Ham + Cheese', quantity: 1 },
-        { name: 'Grilled Cheese', quantity: 1 },
-        { name: 'Tomato Soup', quantity: 1 },
-        { name: 'Waffle Dog', quantity: 1 },
-        { name: 'Drip', quantity: 1 },
-        { name: 'Americano', quantity: 1 },
-        { name: 'Double Espresso', quantity: 1 },
-        { name: 'Cappuccino', quantity: 1 },
-        { name: 'Latte', quantity: 1 },
-        { name: 'Mocha', quantity: 1 },
-        { name: 'White Mocha', quantity: 1 },
-        { name: 'Iced Coffee', quantity: 1 },
-        { name: 'Iced Tea', quantity: 1 },
-        { name: 'Lemonade', quantity: 1 },
-        { name: 'Chai Latte', quantity: 1 },
-        { name: 'Hot Cocoa', quantity: 1 },
-    ]);
+    const [state, setState] = useState(INIT_DATA);
 
-    useEffect(() => {
-        setProducts([]);
-        fetchData();
-    }, [props.paramsVal]);
-
-    const fetchData = async () => {
-        const filter = props.paramsVal;
+    const fetchData = () => {
+        const filter = category;
         fetchProducts(filter)
             .then(response => setProducts(response.data))
             .catch(error => new Error('cannot fetch data:', error));
     };
 
+    useEffect(() => {
+        setProducts([]);
+        fetchData();
+    }, [category]);
+
     const handleChange = e => {
-        setState(
-            [...state].map(item => {
-                if (item.name === e.target.name) {
-                    return { ...item, quantity: +e.target.value };
-                } else return item;
-            }),
-        );
+        const newState = state.map(item => {
+            if (item.name === e.target.name) {
+                return { ...item, quantity: +e.target.value };
+            } else return item;
+        });
+
+        setState(newState);
     };
+
     const handleSubmit = (e, id, quantity) => {
         e.preventDefault();
-        props.onAdd(id, quantity);
+        onAdd(id, quantity);
     };
 
     const list = products.map(product => {
