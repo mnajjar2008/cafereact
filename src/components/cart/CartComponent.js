@@ -7,7 +7,7 @@ function Cart(props) {
             return (
                 <div key={item.id} className="row align-items-center bg-light m-2 p-sm-2">
                     <div className="text-center text-md-left col-md-2">
-                        <img width="100" height="100" src={item.image} alt={item.name} />
+                        <img width="100" height="100" src={process.env.PUBLIC_URL + item.image} alt={item.name} />
                     </div>
                     <div className="col-md-3 text-center text-md-left p-sm-2">{item.name}</div>
                     <div className="col-md-3 text-center">
