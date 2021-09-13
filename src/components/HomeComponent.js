@@ -19,7 +19,7 @@ function Home() {
                     </p>
                 </div>
                 <div className="col-md-6">
-                    <img className="img-thumbnail" src={process.env.PUBLIC_URL + '/assets/menu-items/pastries/muffin.jpeg'} alt="Coffee Collection" />
+                    <img className="img-thumbnail" src={process.env.PUBLIC_URL + '/assets/menu-items/waffles/waffle.jpeg'} alt="Coffee Collection" />
                     <p className="p-3">We pride ourselves on providing organic, fair trade tea and coffee. We work with local dairy suppliers and bakeries to source the freshest, highest quality offerings.</p>
                     <p className="p-3">Our classic menu will be sure to please guests of all ages. We offer special quarterly waffles and pastries to please many of our guest who always look forward to visit our cafe and enjoy a great meal.</p>
                 </div>
