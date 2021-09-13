@@ -82,7 +82,7 @@ const Order = ({ category, onAdd }) => {
                         <h6>${product.price.toFixed(2)}</h6>
                     </div>
                     <figure className="card-body">
-                        <img src={product.image} alt={product.name} />
+                        <img src={process.env.PUBLIC_URL + product.image} alt={product.name} />
                     </figure>
                     <figcaption className="card-footer">
                         {product.description}
