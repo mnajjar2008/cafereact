@@ -4,6 +4,9 @@ import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 
 class App extends Component {
+    componentDidMount() {
+        document.title = 'San Jose Cafe';
+    }
     render() {
         return (
             <BrowserRouter>

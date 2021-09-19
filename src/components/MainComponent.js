@@ -27,12 +27,12 @@ function Main() {
             <main>
                 <Switch>
                     <Route path="/cart" render={() => <Cart items={products.filter(item => item.quantity > 0)} onAdd={(id, quantity) => onAdd(id, quantity)} />} />
-                    <Route path="/home" component={Home} />
+                    <Route exact path="/" component={Home} />
                     <Route path="/menu" render={() => <Menu products={products} />} />
                     <Route exact path="/order" render={() => <Order onAdd={(id, quantity) => onAdd(id, quantity)} />} />
                     <Route path="/order/:category" render={props => <Order onAdd={(id, quantity) => onAdd(id, quantity)} category={props.match.params.category} />} />
                     <Route path="/about" component={About} />
-                    <Redirect to="/home" />
+                    <Redirect to="/" />
                 </Switch>
             </main>
             <Footer />
