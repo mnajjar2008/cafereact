@@ -27,8 +27,8 @@ function Main() {
             <main>
                 <Switch>
                     <Route path="/cart" render={() => <Cart items={products.filter(item => item.quantity > 0)} onAdd={(id, quantity) => onAdd(id, quantity)} />} />
-                    <Route path="/cafereact" component={Home} />
-                    <Route exact path="/cafereact/menu" render={() => <Menu products={products} />} />
+                    <Route exact path="/cafereact" component={Home} />
+                    <Route path="/cafereact/menu" render={() => <Menu products={products} />} />
                     <Route exact path="/order" render={() => <Order onAdd={(id, quantity) => onAdd(id, quantity)} />} />
                     <Route path="/order/:category" render={props => <Order onAdd={(id, quantity) => onAdd(id, quantity)} category={props.match.params.category} />} />
                     <Route path="/about" component={About} />
