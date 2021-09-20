@@ -24,7 +24,7 @@ function Header(props) {
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className="nav-link" to="/cafereact/menu">
+                        <NavLink className="nav-link" to="/menu">
                             <i className="fa fa-bars" aria-hidden="true" /> Menu
                         </NavLink>
                     </NavItem>
